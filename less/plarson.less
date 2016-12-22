@@ -1,0 +1,38 @@
+@import "variables";
+
+* {
+  margin:0;
+  padding:0;
+}
+
+html, body, .wrapper {
+  height:100%;
+}
+
+.main {
+  min-height: 100%;
+  background-color: #a2b022;
+}
+.article {
+  padding-bottom: @height-footer;
+  p {
+    padding: @padding-section;
+  }
+}
+.header {
+  height: @height-header;
+  background-color: @color-olive;
+  div {
+    padding: @padding-header;
+  }
+  }
+.footer {
+  height: @height-footer;
+  margin-top: -@height-footer;
+  background-color: @color-olive;
+  div {
+    text-align: center;
+    line-height: @height-footer;
+  }
+}
+
